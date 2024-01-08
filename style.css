@@ -1,40 +1,30 @@
+/* Stile für den Body oder andere HTML-Elemente außerhalb der VR-Szene */
 body {
 	margin: 0;
-	background-color: #000;
-	color: #fff;
-	font-family: Monospace;
-	font-size: 13px;
-	line-height: 24px;
-}
-
-a {
-	color: #ff0;
-	text-decoration: none;
-}
-
-a:hover {
-	text-decoration: underline;
-}
-
-button {
-	cursor: pointer;
-	text-transform: uppercase;
-}
-
-canvas {
-	display: block;
-}
-
-#info {
-	position: absolute;
-	top: 0px;
-	width: 100%;
-	padding: 10px;
-	box-sizing: border-box;
+	padding: 0;
+	font-family: Arial, sans-serif;
+  }
+  
+  /* Beispielstil für Überschriften */
+  h1 {
+	color: #333;
 	text-align: center;
-	z-index: 1; /* TODO Solve this in HTML */
-}
-
-.dg.ac {
-	z-index: 2 !important; /* TODO Solve this in HTML */
-}
+  }
+  
+  /* Beispielstil für eine Schaltfläche */
+  .button {
+	display: block;
+	width: 150px;
+	margin: 20px auto;
+	padding: 10px;
+	text-align: center;
+	background-color: #832598;
+	color: white;
+	text-decoration: none;
+	border-radius: 5px;
+  }
+  
+  .button:hover {
+	background-color: #410a57;
+  }
+  

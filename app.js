@@ -1,4 +1,4 @@
-import * as THREE from '../99_Lib/three.module.min.js';
+import * as THREE from '../build/three.module.js';
 console.log("ThreeJs " + THREE.REVISION);
 
 

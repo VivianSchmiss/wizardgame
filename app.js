@@ -1,8 +1,8 @@
 //    CODE 1:
-import * as THREE from '.three/three.module.js';
-import { VRButton } from '.three/jsm/VRButton.js';
-import { XRControllerModelFactory } from '.three/jsm/XRControllerModelFactory.js';
-import { BoxLineGeometry } from '.three/jsm/BoxLineGeometry.js';
+import * as THREE from './three/three.module.js';
+import { VRButton } from './three/jsm/VRButton.js';
+import { XRControllerModelFactory } from './three/jsm/XRControllerModelFactory.js';
+import { BoxLineGeometry } from './three/jsm/BoxLineGeometry.js';
 import { Stats } from './others/stats.module.js';
 import { OrbitControls } from './three/jsm/OrbitControls.js';
 
@@ -45,7 +45,7 @@ constructor(){
 	this.workingVector = new THREE.Vector3();
         
         this.initScene();
-        this.setupVR();
+        this.setupXR();
         
         window.addEventListener('resize', this.resize.bind(this) );
         
@@ -149,6 +149,7 @@ initScene(){
             		this.workingMatrix.identity().extractRotation(controller.matrixWorld);
             		this.raycaster.ray.origin.setFromMatrixPosition(controller.matrixWorld);
             		this.raycaster.ray.direction.set(0,0,-1).applyMatrix4(this.workingMatrix);
+			//this.raycaster.ray.direction.set(0,0,-1).applyMatrix4(controller.matrixWorld);
 
             		const intersects = this.raycaster.intersectObjects(this.room.children);
 

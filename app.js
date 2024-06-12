@@ -1,8 +1,8 @@
 //    CODE 1:
 //import * as THREE from './three/three.module.js';
 import * as THREE from 'three';
-//import { VRButton } from './three/jsm/VRButton.js';
-import { VRButton } from 'three/examples/jsm/webxr/VRButton.js';
+import { VRButton } from './three/jsm/VRButton.js';
+//import { VRButton } from 'three/examples/jsm/webxr/VRButton.js';
 import { XRControllerModelFactory } from './three/jsm/XRControllerModelFactory.js';
 import { BoxLineGeometry } from './three/jsm/BoxLineGeometry.js';
 import { Stats } from './others/stats.module.js';

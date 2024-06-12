@@ -2,7 +2,6 @@
  * @author mrdoob / http://mrdoob.com
  * @author Mugen87 / https://github.com/Mugen87
  */
-/*
 var VRButton = {
 
 	createButton: function ( renderer, options ) {
@@ -13,7 +12,7 @@ var VRButton = {
 
 		}
 
-		function showEnterVR( /*device/ ) {	// VOR UND NACH device *
+		function showEnterVR( /*device*/ ) {	// VOR UND NACH device *
 
 			var currentSession = null;
 
@@ -28,7 +27,7 @@ var VRButton = {
 
 			}
 
-			function onSessionEnded( /*event/ ) {	// VOR UND NACH event *
+			function onSessionEnded( /*event*/ ) {	// VOR UND NACH event *
 
 				currentSession.removeEventListener( 'end', onSessionEnded );
 
@@ -170,14 +169,15 @@ var VRButton = {
 };
 
 export { VRButton };
-*/
+
+/*
 class VRButton {
 
 	static createButton( renderer ) {
 
 		const button = document.createElement( 'button' );
 
-		function showEnterVR( /*device*/ ) {
+		function showEnterVR( /*device/ ) {
 
 			let currentSession = null;
 
@@ -192,7 +192,7 @@ class VRButton {
 
 			}
 
-			function onSessionEnded( /*event*/ ) {
+			function onSessionEnded( /*event/ ) {
 
 				currentSession.removeEventListener( 'end', onSessionEnded );
 
@@ -371,3 +371,4 @@ VRButton.xrSessionIsGranted = false;
 VRButton.registerSessionGrantedListener();
 
 export { VRButton };
+*/

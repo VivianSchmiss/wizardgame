@@ -90,7 +90,7 @@ initScene(){
         	this.renderer.xr.enabled = true;
 
         	//document.body.appendChild( VRButton.createButton( this.renderer ));
-		const button = new VRButton( this.renderer );
+		const button = new THREE.VRButton( this.renderer );
 
         	this.controllers = this.buildControllers();
 

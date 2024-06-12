@@ -1,6 +1,6 @@
 //    CODE 1:
-//import * as THREE from './three/three.module.js';
-import * as THREE from 'three';
+import * as THREE from './three/three.module.js';
+//import * as THREE from 'three';
 import { VRButton } from './three/jsm/VRButton.js';
 //import { VRButton } from 'three/examples/jsm/webxr/VRButton.js';
 import { XRControllerModelFactory } from './three/jsm/XRControllerModelFactory.js';
@@ -91,8 +91,8 @@ initScene(){
 	setupVR(){
         	this.renderer.xr.enabled = true;
 
-        	//document.body.appendChild( VRButton.createButton( this.renderer ));
-		const button = new VRButton( this.renderer );
+        	document.body.appendChild( VRButton.createButton( this.renderer ));
+		//const button = new VRButton( this.renderer );
 
         	this.controllers = this.buildControllers();
 

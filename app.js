@@ -45,7 +45,7 @@ constructor(){
 	this.workingVector = new THREE.Vector3();
         
         this.initScene();
-        this.setupXR();
+        this.setupVR();
         
         window.addEventListener('resize', this.resize.bind(this) );
         
@@ -86,11 +86,11 @@ initScene(){
         this.scene.add(this.highlight);
     	}
     
-	setupXR(){
+	setupVR(){
         	this.renderer.xr.enabled = true;
 
-        	document.body.appendChild( VRButton.createButton( this.renderer ));
-		//const button = new VRButton( this.renderer );
+        	//document.body.appendChild( VRButton.createButton( this.renderer ));
+		const button = new VRButton( this.renderer );
 
         	this.controllers = this.buildControllers();
 
